@@ -171,7 +171,7 @@ const DB = {
     { id: 10, title: 'Icon System', category: 'Component & Design System Shots', span: '', url: './images/mv-03.webp', hidden: true },
     { id: 12, title: 'Packaging Design', category: 'Packaging & Print Collateral', span: 'row-span-2', url: './images/lh-02.webp', hidden: true },
     { id: 11, title: 'Brand Guidelines', category: 'Brand Identity Systems', span: 'col-span-2', url: './images/b-02.webp', hidden: true },
-    { id: 9, title: 'Dashboard Analytics', category: 'UI Screens & Flows', span: '', url: './images/LH-01.webp', hidden: true },
+    { id: 9, title: 'Dashboard Analytics', category: 'UI Screens & Flows', span: '', url: './images/lh-01.webp', hidden: true },
     { id: 9, title: 'Dashboard Analytics', category: 'UI Screens & Flows', span: '', url: './images/ci-03.webp', hidden: true },
     { id: 9, title: 'Dashboard Analytics', category: 'UI Screens & Flows', span: '', url: './images/cs-01.webp', hidden: true },
   ]
