@@ -143,6 +143,15 @@
         </div>
 
         <div class="space-y-7">
+          ${cs.figmaLink ? `
+          <div>
+            <h4 class="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Figma File</h4>
+            <a href="${cs.figmaLink}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium text-sm transition-colors">
+              View Design on Figma
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-6l6 6m0 0l-6 6"/></svg>
+            </a>
+          </div>
+          ` : ''}
           <div>
             <h4 class="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Overview</h4>
             <p class="text-sm text-neutral-600 leading-relaxed">${cs.overview}</p>

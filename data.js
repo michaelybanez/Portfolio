@@ -13,6 +13,7 @@ const DB = {
       tools: 'Figma · Material Design 3 · Maze · ClickUp',
       industry: 'Fintech',
       image: './images/cs-01.png',
+      figmaLink: 'https://www.figma.com/design/pnb9idYozUTqJFT3ZCK2Xz/Nevo---Fintech-Onboarding-UI?node-id=0-1&t=OFp67kbcNXU6KRij-1',
       overview: 'Nevo is a mobile-first digital banking app targeting young professionals who want an alternative to traditional banking — instant account setup, budgeting tools, and zero maintaining balance. Despite strong app store traffic, a significant portion of new users were abandoning the onboarding flow before completing account creation. I was brought in as Design Lead to diagnose the drop-off problem and redesign the onboarding experience.',
       problem: {
         intro: 'The onboarding flow had a steep drop-off. Most users were abandoning before completing identity verification — the midpoint of the flow. The existing design was treating onboarding as a form-filling exercise rather than a first experience with the product.',
@@ -54,6 +55,7 @@ const DB = {
       tools: 'Figma · Hotjar · Material Design 3 · ClickUp',
       industry: 'Ecommerce / Medical Supplies',
       image: './images/cs-02.png',
+      figmaLink: 'https://www.figma.com/design/JDE6McxTU9Yd7EmDfWPhzM/Curastock---E-commerce-Checkout-UX?node-id=0-1&t=YGjixvOEaKQvhsb8-1',
       overview: 'Curastock is an ecommerce platform supplying OTC medical products to individual buyers and small clinic practitioners. The client had an existing website with a functioning checkout but a high cart abandonment rate and frequent support tickets around order confusion, payment failures, and shipping selection. I was brought in to redesign the checkout flow end-to-end — from cart review to order confirmation.',
       problem: {
         intro: 'The checkout had two distinct user types with conflicting needs — individual buyers making small one-time purchases, and clinic staff placing bulk repeat orders. The existing flow treated both identically, which served neither well.',
@@ -97,6 +99,7 @@ const DB = {
       tools: 'Figma · Tailwind CSS · Material-Tailwind UI · ClickUp',
       industry: 'B2B SaaS',
       image: './images/cs-03.png',
+      figmaLink: 'https://www.figma.com/design/vyQcKy4jjKX7BM73ZXGyvr/Corelix---Design-System-v1.0?node-id=0-1&t=IUxfMkHPh0b4wM5N-1',
       overview: 'Corelix is a B2B SaaS platform that helps operations teams manage workflows, track tasks, and monitor performance across departments. As the product scaled, the lack of a unified design language created friction between design and development — inconsistent UI, duplicated components, and slow handoffs were slowing the team down. I was brought in to build the design system from the ground up.',
       problem: {
         intro: 'The product had grown fast. Multiple developers were building UI independently, pulling from inconsistent sources.',
