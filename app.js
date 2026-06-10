@@ -280,7 +280,12 @@
     const sortedHidden = getSortedItems(hidden);
     renderBentoItems(sortedHidden);
     allLoaded = true;
+    // Mark all hidden items as loaded in the data
+    hidden.forEach(item => { item.hidden = false; });
+    // Permanently hide and disable the button
     loadMoreBtn.style.display = 'none';
+    loadMoreBtn.disabled = true;
+    loadMoreBtn.removeEventListener('click', arguments.callee);
   });
 
   // ——— Visual Works Modal ———
