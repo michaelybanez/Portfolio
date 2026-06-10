@@ -244,9 +244,22 @@
     });
   }
 
+  function isMobileView() {
+    return window.innerWidth < 768; // md breakpoint is 768px
+  }
+
+  function getSortedItems(items) {
+    if (isMobileView()) {
+      // Sort by category on mobile for better organization
+      return [...items].sort((a, b) => a.category.localeCompare(b.category));
+    }
+    return items;
+  }
+
   function initBento() {
     const visible = DB.visualWorks.filter(v => !v.hidden);
-    renderBentoItems(visible);
+    const sortedItems = getSortedItems(visible);
+    renderBentoItems(sortedItems);
 
     const hasMore = DB.visualWorks.some(v => v.hidden);
     if (!hasMore) loadMoreBtn.style.display = 'none';
@@ -255,7 +268,8 @@
   loadMoreBtn.addEventListener('click', () => {
     if (allLoaded) return;
     const hidden = DB.visualWorks.filter(v => v.hidden);
-    renderBentoItems(hidden);
+    const sortedHidden = getSortedItems(hidden);
+    renderBentoItems(sortedHidden);
     allLoaded = true;
     loadMoreBtn.style.display = 'none';
   });
@@ -265,11 +279,26 @@
   const visualModalImg = document.getElementById('visual-modal-img');
   const visualModalTitle = document.getElementById('visual-modal-title');
   const visualModalClose = document.getElementById('visual-modal-close');
+  const visualModalPrev = document.getElementById('visual-modal-prev');
+  const visualModalNext = document.getElementById('visual-modal-next');
+  let currentVisualIndex = 0;
+
+  function updateVisualModal() {
+    const currentItem = DB.visualWorks[currentVisualIndex];
+    visualModalImg.src = currentItem.url;
+    visualModalImg.alt = currentItem.title;
+    visualModalTitle.textContent = currentItem.title;
+    
+    // Update button states
+    visualModalPrev.disabled = currentVisualIndex === 0;
+    visualModalNext.disabled = currentVisualIndex === DB.visualWorks.length - 1;
+  }
 
   function openVisualModal(item) {
-    visualModalImg.src = item.url;
-    visualModalImg.alt = item.title;
-    visualModalTitle.textContent = item.title;
+    const itemIndex = DB.visualWorks.findIndex(v => v.id === item.id && v.url === item.url);
+    if (itemIndex === -1) return;
+    currentVisualIndex = itemIndex;
+    updateVisualModal();
     visualModal.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
   }
@@ -283,6 +312,20 @@
 
   visualModalClose.addEventListener('click', closeVisualModal);
   visualModal.addEventListener('click', e => { if (e.target === visualModal) closeVisualModal(); });
+  
+  visualModalPrev.addEventListener('click', () => {
+    if (currentVisualIndex > 0) {
+      currentVisualIndex--;
+      updateVisualModal();
+    }
+  });
+  
+  visualModalNext.addEventListener('click', () => {
+    if (currentVisualIndex < DB.visualWorks.length - 1) {
+      currentVisualIndex++;
+      updateVisualModal();
+    }
+  });
 
   // ——— Init ———
   renderCaseCards();
