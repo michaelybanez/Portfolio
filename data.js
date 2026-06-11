@@ -136,27 +136,27 @@ const DB = {
     {
       step: 'Step 01',
       title: 'Brief Before Assumptions',
-      desc: 'Every project starts with understanding what the business actually needs — not what the first request says. A logo brief is rarely just a logo brief.',
+      desc: 'Every project starts with understanding what the business actually needs. The right questions at the start shape everything that follows.',
     },
     {
       step: 'Step 02',
       title: 'Concept Grounded in Context',
-      desc: 'Visual direction follows research into the brand, the audience, and the competitive space. Aesthetics without context is decoration.',
+      desc: 'Visual direction follows research into the brand, the audience, and the competitive space. When aesthetics are rooted in context, they do more than look good — they mean something.',
     },
     {
       step: 'Step 03',
       title: 'Craft at Every Scale',
-      desc: 'Whether it\'s a brand system or a single social asset, the same level of attention applies. Visual quality isn\'t selective.',
+      desc: 'Whether it\'s a brand system or a single social asset, the same level of attention applies. Visual quality is consistent because it has to be.',
     },
     {
       step: 'Step 04',
       title: 'Designed to Survive Production',
-      desc: 'Print specs, digital formats, responsive breakpoints — deliverables are built for where they actually live, not just how they look in the mockup.',
+      desc: 'Print specs, digital formats, responsive breakpoints — deliverables are built for where they actually live. What works in the mockup works in the real world too.',
     },
     {
       step: 'Step 05',
       title: 'Handoff That Actually Works',
-      desc: 'Files organized, formats ready, specs documented. A design that confuses the printer or developer isn\'t finished.',
+      desc: 'Files organized, formats ready, specs documented. Everything a printer, developer, or client needs to move forward with confidence.',
     },
   ],
 
@@ -170,7 +170,7 @@ const DB = {
     { id: 7, title: 'Brochure — Guilasons Furniture', category: 'Print Collateral', span: 'md:col-span-2 lg:col-span-2', url: './images/printcollateral-brochure-01.webp' },
     { id: 8, title: 'Logo Mockup — Stitch BKLYN', category: 'Brand Identity', span: '', url: './images/brandidentity-logomockup-03.webp' },
     // Hidden initially (load more)
-    { id: 9, title: 'Letterhead', category: 'Print Collateral', span: '', url: './images/printcollateral-packaging-01.webp', hidden: true },
+    { id: 9, title: 'Packiging Mockup', category: 'Print Collateral', span: '', url: './images/printcollateral-packaging-01.webp', hidden: true },
     { id: 10, title: 'Feed Post', category: 'Social Media', span: '', url: './images/socialmedia-feedpost-02.webp', hidden: true },
     { id: 12, title: 'Letterhead', category: 'Brand Identity', span: 'md:row-span-2 lg:row-span-2', url: './images/lh-02.webp', hidden: true },
     { id: 13, title: 'Logo — Guilasons Furniture', category: 'Brand Identity', span: '', url: './images/brandidentity-logo-04.webp', hidden: true },
