@@ -7,7 +7,7 @@ const DB = {
     {
       id: 'littleGrove',
       title: 'Little Grove — Building a warmer identity for modern early learning',
-      tagline: 'How do you stop users from abandoning before they ever see the product?',
+      tagline: 'A warm, flexible identity built to grow with a modern early-learning brand.',
       pills: ['Brand Identity', 'Visual Language', 'Art Direction'],
       role: 'Senior Graphic Designer',
       industry: 'Early Education',
@@ -46,7 +46,7 @@ const DB = {
     {
       id: 'brightstar',
       title: 'Brightstar — Turning an enrollment goal into a campaign system',
-      tagline: 'A checkout built around system logic — not the user\'s mental model of buying.',
+      tagline: 'A campaign system turning an enrollment message into engaging, consistent creative.',
       pills: ['Campaign Creative', 'Art Direction', 'Digital Marketing'],
       role: 'Senior Graphic Designer',
       tools: 'Figma · Hotjar · Material Design 3 · ClickUp',
@@ -86,7 +86,7 @@ const DB = {
     {
       id: 'northline',
       title: 'Northline — Extending a brand from the canvas into the interface',
-      tagline: 'No source of truth, inconsistent UI, slow handoffs — the system had to be built from scratch.',
+      tagline: 'A digital brand system bringing consistency from visual identity to interface.',
       pills: ['Design System', 'B2B SaaS', 'Design Lead'],
       role: 'Senior Graphic Designer / Digital Designer',
       tools: 'Figma · Tailwind CSS · Material-Tailwind UI · ClickUp',
