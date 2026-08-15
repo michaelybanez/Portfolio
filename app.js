@@ -57,12 +57,7 @@
           <div class="flex flex-wrap gap-1.5 mb-4">${renderPills(cs.pills)}</div>
           <h3 class="text-base font-semibold text-neutral-900 mb-2 leading-snug">${cs.title}</h3>
           <p class="text-sm text-neutral-400 leading-relaxed flex-1">${cs.tagline}</p>
-          <div class="mt-5 pt-5 border-t border-neutral-100 mb-5">
-            <div>
-              <div class="text-xs font-medium text-neutral-500">${cs.role}</div>
-              <div class="text-xs text-neutral-400 mt-0.5">${cs.tools}</div>
-            </div>
-          </div>
+          <div class="text-xs font-medium text-neutral-500 my-5">${cs.role}</div>
             <button class="card-cta text-xs font-semibold text-primary-600 border border-primary-200 px-3 py-1.5 rounded-lg transition-all duration-200 whitespace-nowrap" data-id="${cs.id}">
               View Case Study
             </button>
@@ -139,7 +134,7 @@
         <div class="flex flex-wrap gap-4 text-xs text-neutral-400 font-medium mb-6">
           <span>Role: <span class="text-neutral-600">${cs.role}</span></span>
           <span>Industry: <span class="text-neutral-600">${cs.industry}</span></span>
-          <span>Tools: <span class="text-neutral-600">${cs.tools}</span></span>
+          
         </div>
 
         <div class="space-y-7">
@@ -158,15 +153,12 @@
           </div>
 
           <div>
-            <h4 class="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">The Problem</h4>
+            <h4 class="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">The Challenge</h4>
             <p class="text-sm text-neutral-600 leading-relaxed mb-3">${cs.problem.intro}</p>
             <ul class="space-y-2">${issuesHTML}</ul>
           </div>
 
-          <div>
-            <h4 class="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Constraints</h4>
-            <ul class="space-y-2">${constraintsHTML}</ul>
-          </div>
+          
 
           <div>
             <h4 class="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Process</h4>
@@ -179,7 +171,7 @@
           </div>
 
           <div class="bg-neutral-50 border border-neutral-200 rounded-xl p-5">
-            <h4 class="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">What I'd Do Differently</h4>
+            <h4 class="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-2">Reflection</h4>
             <p class="text-sm text-neutral-600 leading-relaxed italic">"${cs.reflection}"</p>
           </div>
         </div>
