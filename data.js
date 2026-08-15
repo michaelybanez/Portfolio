@@ -12,7 +12,7 @@ const DB = {
       role: 'Senior Graphic Designer',
       industry: 'Early Education',
       image: './images/cs-01.png',
-      figmaLink: 'https://www.figma.com/design/pnb9idYozUTqJFT3ZCK2Xz/Nevo---Fintech-Onboarding-UI?node-id=0-1&t=OFp67kbcNXU6KRij-1',
+      figmaLink: 'https://www.figma.com/design/pnb9idYozUTqJFT3ZCK2Xz/Nevo---Fintech-Onboarding-UI?node-id=0-1&t=OFp67kbcNXU6K1Rij-',
       overview: 'Little Grove is a modern early-learning brand built around the idea that children learn through curiosity, exploration, and connection. The project focused on creating an identity that felt warm and approachable without relying on the overly playful visual language commonly associated with children\'s brands. The result needed to work consistently across marketing, print, social media, and digital applications while giving the brand a recognizable visual language beyond the logo.',
       problem: {
         intro: 'The existing visual direction felt functional but lacked a distinctive system that could consistently connect its different communication materials.',
