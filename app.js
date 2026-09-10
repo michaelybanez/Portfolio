@@ -161,7 +161,7 @@
           
 
           <div>
-            <h4 class="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Process</h4>
+            <h4 class="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">The Approach</h4>
             <div class="space-y-0">${processHTML}</div>
           </div>
 
